@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.app-wrapper {
+  width: 350px;
+  background-color: rgba(46, 46, 68, 0.95);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.theater {
+  background-color: #3a3a50;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.seating-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.slot {
+  width: 28px;
+  height: 28px;
+  background-color: #cccccc;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.slot:hover {
+  transform: scale(1.1);
+}
+
+.slot.taken {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.slot.selected {
+  background-color: #00d8ff;
+}
+
+.summary {
+  margin-top: 20px;
+  font-weight: bold;
+}

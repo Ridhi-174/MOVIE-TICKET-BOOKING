@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Seat Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-wrapper">
+    <h2>Book Your Seats</h2>
+
+    <div class="form-group">
+      <label for="film">Select a Movie:</label>
+      <select id="film">
+        <option value="120">Spider-Man (₹120)</option>
+        <option value="150">Barbie (₹150)</option>
+        <option value="200">Batman (₹200)</option>
+      </select>
+    </div>
+
+    <div class="theater">
+      <div class="display"></div>
+
+      <div class="seating-row">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot taken"></div>
+        <div class="slot"></div>
+      </div>
+
+      <div class="seating-row">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot taken"></div>
+      </div>
+
+      <div class="seating-row">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+    </div>
+
+    <p class="summary">Selected Seats: <span id="seatCount">0</span> | Total Cost: ₹<span id="cost">0</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
